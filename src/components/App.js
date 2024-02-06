@@ -11,11 +11,12 @@ function App() {
   return (
     <div className="App">
       <h2>My tasks</h2>
-      <CategoryFilter />
-      <NewTaskForm />
-      <TaskList />
+      <CategoryFilter categories={CATEGORIES}/>
+      <NewTaskForm categories={CATEGORIES}/>
+      <TaskList tasks={TASKS}/>
     </div>
   );
 }
 
 export default App;
+ 
